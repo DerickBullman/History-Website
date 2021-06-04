@@ -105,8 +105,9 @@ canvas {
 
 #cites ul li {
   margin: 0;
-  margin-left: 40px;
-  text-indent: -40px;
+  text-size: 18px
+  margin-left: 25px;
+  text-indent: -25px;
   line-height: 2;
   list-style: none;
 }
