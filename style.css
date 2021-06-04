@@ -34,12 +34,10 @@ canvas {
 }
 
 #content {
+  display: inline;
+  font-size: 18px;
   color: #fff;
   padding: 10px;
-}
-
-#content p {
-  font-size: 18px;
 }
 
 #content p a {
