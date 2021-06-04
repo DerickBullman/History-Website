@@ -1,0 +1,150 @@
+html, body {
+  background: #18181a;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+#navbar {
+  display: grid;
+}
+
+#navbar a, #navbar strong {
+  padding: 0.5em;
+  border: 1px solid #3d3d40;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+#navbar a:hover {
+  background-color: #343436;
+}
+
+#navbar strong {
+  background-color: #3d3d40;
+  transition: none;
+}
+
+.container {
+  display: grid;
+}
+
+#content {
+  display: inline;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+}
+
+#content p a {
+  color: #759bd9;
+  text-decoration: none;
+}
+
+#content p a:hover {
+  color: #4d70a8;
+}
+
+#content h1 {
+  text-align: center;
+  font-size: 26px;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+#content h2 {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+#content > * {
+  margin: 0;
+  padding: 0;
+}
+
+.picture {
+  display: grid;
+}
+
+.picture > * {
+  margin: 0;
+  padding: 0;
+}
+
+.picture img {
+  min-width: 200px;
+  max-width: 50%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+#cites {
+  color: #fff;
+  font-size: 18px;
+}
+
+#cites h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+#cites ul {
+  margin: 0;
+  padding: 5px;
+}
+
+#cites ul li {
+  margin: 0;
+  margin-left: 40px;
+  text-indent: -40px;
+  line-height: 2;
+  list-style: none;
+}
+
+.highlighted span {
+  background-color: #a4bfeb44;
+}
+
+#cites ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  #navbar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  #navbar {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .container {
+    grid-template-columns: 100px 1fr 100px;
+  }
+  
+  .container > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    grid-column: 2;
+  }
+  
+  .picture {
+    grid-template-columns: 1fr 300px;
+  }
+  
+  .picture img {
+    max-width: 100%;
+  }
+}
